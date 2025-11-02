@@ -1,0 +1,6 @@
+GITHUB PAGES – SCHNELLANLEITUNG (DE)
+
+1) In GitHub: Settings → Pages → Source: Deploy from a branch, Branch: main / (root), Save.
+2) Dateien hochladen: Im Repo → Add file → Upload files → gesamten Inhalt (index.html, assets/).
+3) YouTube-IDs ersetzen: In index.html nach VIDEO_ID_1, VIDEO_ID_2 … suchen und austauschen.
+4) Seite aufrufen: https://<deinname>.github.io/ThomasLehmannMusic/
