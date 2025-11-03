@@ -6,11 +6,23 @@
   <title>Thomas Lehmann – Emotional Orchestral Music</title>
   <meta name="description" content="Cinematic & Emotional Orchestral Music by Thomas Lehmann – Piano Träume.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .hero-full {
+      position: relative; min-height: 70vh; display:grid; place-items:center;
+      border-radius: 24px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      background: url('assets/images/hero.jpg') center/cover no-repeat;
+    }
+    .hero-full::after { content:""; position:absolute; inset:0;
+      background: radial-gradient(ellipse at 60% 60%, rgba(255,210,120,.18), rgba(0,0,0,.18) 60%); }
+    .hero-content { position:relative; text-align:center; padding:24px 18px; }
+    .hero-title { font-size: clamp(28px, 5vw, 56px); color:#f3e6c6; text-shadow:0 6px 24px rgba(0,0,0,.65); margin:0 0 6px; }
+    .hero-sub { color:#e8d29c; margin:0; font-size:clamp(14px, 2.2vw, 20px); text-shadow:0 4px 18px rgba(0,0,0,.65); }
+  </style>
 </head>
 <body>
   <div class="container">
     <nav class="nav">
-      <div class="brand">Thomas Lehmann Music</div>
+      <div class="brand"><a href="index.html">Thomas Lehmann Music</a></div>
       <div class="menu">
         <a class="active" href="index.html">Home</a>
         <a href="albums.html">CD-Covers</a>
@@ -23,26 +35,13 @@
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="overlay">
-        <h1 data-lang="de">Thomas Lehmann – Emotionale Orchestermusik</h1>
-        <h1 data-lang="en" class="hide">Thomas Lehmann – Emotional Orchestral Music</h1>
-        <p data-lang="de">Cineastische Klangwelten für Herz und Stille.</p>
-        <p data-lang="en" class="hide">Cinematic soundscapes for the heart and the silence.</p>
+    <section class="hero-full" role="img" aria-label="Piano by the Lake – sunset at a tranquil lake, grand piano under trees">
+      <div class="hero-content">
+        <h1 class="hero-title" data-lang="de">Piano by the Lake</h1>
+        <h1 class="hero-title hide" data-lang="en">Piano by the Lake</h1>
+        <p class="hero-sub" data-lang="de">Thomas Lehmann – Emotional Orchestral Music</p>
+        <p class="hero-sub hide" data-lang="en">Thomas Lehmann – Emotional Orchestral Music</p>
       </div>
-    </section>
-
-    <section>
-      <h2 data-lang="de">Willkommen</h2>
-      <h2 data-lang="en" class="hide">Welcome</h2>
-      <p data-lang="de">
-        Dies ist die offizielle Musikseite von Thomas Lehmann.  
-        Hier finden Sie cineastische und emotionale Orchester- und Pianokompositionen, inspiriert von Natur, Licht und innerer Stille.
-      </p>
-      <p data-lang="en" class="hide">
-        This is the official music site of Thomas Lehmann.  
-        Here you can discover cinematic and emotional orchestral and piano compositions inspired by nature, light, and inner silence.
-      </p>
     </section>
 
     <footer class="footer">
@@ -50,7 +49,6 @@
       <div data-lang="en" class="hide">© 2025 Thomas Lehmann – All rights reserved · <a href="index.html">Website (Home)</a></div>
     </footer>
   </div>
-
   <script src="assets/js/app.js"></script>
 </body>
 </html>
