@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas Lehmann – CD-Covers</title>
+  <meta name="description" content="CD Cover Galerie von Thomas Lehmann – Cinematic & Emotional Music.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body { background:#0b0e16; color:#f0f0f0; margin:0; }
+    .container { max-width:1200px; margin:24px auto 60px; padding:0 20px; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:14px 0; }
+    .brand a { color:#fff; text-decoration:none; font-weight:700; }
+    .menu a { color:#fff; text-decoration:none; margin:0 10px; }
+    .menu a.active { color:#e8d29c; }
+    .lang-toggle button { border:1px solid #e8d29c; background:transparent; color:#e8d29c; border-radius:8px; padding:4px 10px; margin-left:6px; cursor:pointer; }
+    .lang-toggle .active { background:#e8d29c; color:#0b0e16; }
+    h1 { color:#e8d29c; text-align:center; margin:10px 0 18px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:26px; }
+    .album-card { background:#111523; border-radius:16px; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,.4); transform:translateY(8px); opacity:.0; transition:.35s ease; }
+    .album-card img { width:100%; display:block; }
+    .album-card h3 { margin:12px 14px 6px; }
+    .album-card p { margin:0 14px 10px; color:#cfd6ea; min-height:38px; }
+    .album-card .btn { display:inline-block; margin:0 14px 14px; background:#e8d29c; color:#111; padding:8px 12px; border-radius:8px; text-decoration:none; font-weight:700; }
+    .album-card:hover { transform:translateY(0) scale(1.02); }
+    .fade-in { animation:fadeUp .6s ease forwards; }
+    .album-card:nth-child(1){ animation-delay:.05s; }
+    .album-card:nth-child(2){ animation-delay:.12s; }
+    .album-card:nth-child(3){ animation-delay:.19s; }
+    .album-card:nth-child(4){ animation-delay:.26s; }
+    .album-card:nth-child(5){ animation-delay:.33s; }
+    .album-card:nth-child(6){ animation-delay:.40s; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px);} to { opacity:1; transform:translateY(0);} } 
+    footer { text-align:center; color:#9eb0d1; margin-top:34px; }
+    .hide { display:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="brand"><a href="index.html">Thomas Lehmann Music</a></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a class="active" href="cd-covers.html">CD-Covers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="lang-toggle">
+        <button class="active" data-lang-btn="de">DE</button>
+        <button data-lang-btn="en">EN</button>
+      </div>
+    </nav>
+
+    <h1 data-lang="de">CD-Cover Galerie</h1>
+    <h1 data-lang="en" class="hide">CD Cover Gallery</h1>
+
+    <section class="grid">
+      
+      <article class="album-card fade-in">
+        <img src="assets/images/CD - Cover Echos of Yesterday.png" alt="Echos of Yesterday cover">
+        <h3>Echos of Yesterday</h3>
+        <p data-lang="de">Ein Stück über Erinnerung und Vergänglichkeit.</p>
+        <p data-lang="en" class="hide">A piece about memory and transience.</p>
+        <a class="btn" target="_blank" href="https://youtu.be/OARwQr2mamA">▶ YouTube</a>
+      </article>
+    
+      <article class="album-card fade-in">
+        <img src="assets/images/Cover Long Way.jpg" alt="Long Way cover">
+        <h3>Long Way</h3>
+        <p data-lang="de">Lange Wege, leiser Mut – Schritt für Schritt.</p>
+        <p data-lang="en" class="hide">Long roads, quiet courage – step by step.</p>
+        <a class="btn" target="_blank" href="https://youtu.be/7vWIdR5MJ-k">▶ YouTube</a>
+      </article>
+    
+      <article class="album-card fade-in">
+        <img src="assets/images/CD Cover The Memory.jpg" alt="The Memory Remains cover">
+        <h3>The Memory Remains</h3>
+        <p data-lang="de">Das Leuchten der Vergangenheit im Abendlicht.</p>
+        <p data-lang="en" class="hide">The glow of the past in evening light.</p>
+        <a class="btn" target="_blank" href="https://youtu.be/PWoEmZWA0T0">▶ YouTube</a>
+      </article>
+    
+      <article class="album-card fade-in">
+        <img src="assets/images/Beautiful Oregon.jpg" alt="Beautiful Oregon cover">
+        <h3>Beautiful Oregon</h3>
+        <p data-lang="de">Küste, Berge, Wälder – eine Liebeserklärung an Oregon.</p>
+        <p data-lang="en" class="hide">Coast, mountains, forests – a love letter to Oregon.</p>
+        <a class="btn" target="_blank" href="https://youtu.be/efHo82REj7k">▶ YouTube</a>
+      </article>
+    
+      <article class="album-card fade-in">
+        <img src="assets/images/Cover Symphonie of the Heart.jpg" alt="Symphony of the Heart cover">
+        <h3>Symphony of the Heart</h3>
+        <p data-lang="de">Das Herz als Orchester: leise, mutig, lebendig.</p>
+        <p data-lang="en" class="hide">The heart as an orchestra: quiet, brave, alive.</p>
+        <a class="btn" target="_blank" href="https://youtu.be/zoCGyw2o4c4">▶ YouTube</a>
+      </article>
+    
+      <article class="album-card fade-in">
+        <img src="assets/images/Land of Liberty.jpg" alt="Land of Liberty cover">
+        <h3>Land of Liberty</h3>
+        <p data-lang="de">Weite Horizonte – Klang von Freiheit und Hoffnung.</p>
+        <p data-lang="en" class="hide">Wide horizons – the sound of freedom and hope.</p>
+        <a class="btn" target="_blank" href="https://youtu.be/RF2DbFWZ-pM">▶ YouTube</a>
+      </article>
+    
+    </section>
+
+    <footer>© 2025 Thomas Lehmann – Cinematic & Emotional Music</footer>
+  </div>
+
+  <script>
+    const btnDE = document.querySelector('[data-lang-btn="de"]');
+    const btnEN = document.querySelector('[data-lang-btn="en"]');
+    function showLang(lang) {
+      document.querySelectorAll('[data-lang="de"]').forEach(el => el.classList.toggle('hide', lang !== 'de'));
+      document.querySelectorAll('[data-lang="en"]').forEach(el => el.classList.toggle('hide', lang !== 'en'));
+      if(btnDE) btnDE.classList.toggle('active', lang==='de');
+      if(btnEN) btnEN.classList.toggle('active', lang==='en');
+    }
+    if(btnDE) btnDE.addEventListener('click', () => showLang('de'));
+    if(btnEN) btnEN.addEventListener('click', () => showLang('en'));
+  </script>
+</body>
+</html>
