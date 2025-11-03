@@ -7,14 +7,17 @@
   <meta name="description" content="Cinematic & Emotional Orchestral Music by Thomas Lehmann – Piano Träume.">
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
+    /* Hero block using the uploaded hero.jpg (kept sharp) */
     .hero-full {
-      position: relative; min-height: 70vh; display:grid; place-items:center;
+      position: relative; min-height: 68vh; display:grid; place-items:center;
       border-radius: 24px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,.35);
       background: url('assets/images/hero.jpg') center/cover no-repeat;
+      margin-bottom: 22px;
     }
     .hero-full::after { content:""; position:absolute; inset:0;
-      background: radial-gradient(ellipse at 60% 60%, rgba(255,210,120,.18), rgba(0,0,0,.18) 60%); }
-    .hero-content { position:relative; text-align:center; padding:24px 18px; }
+      background: radial-gradient(ellipse at 60% 60%, rgba(255,210,120,.14), rgba(0,0,0,.18) 60%);
+      pointer-events:none; }
+    .hero-content { position:relative; text-align:center; padding: 24px 18px; }
     .hero-title { font-size: clamp(28px, 5vw, 56px); color:#f3e6c6; text-shadow:0 6px 24px rgba(0,0,0,.65); margin:0 0 6px; }
     .hero-sub { color:#e8d29c; margin:0; font-size:clamp(14px, 2.2vw, 20px); text-shadow:0 4px 18px rgba(0,0,0,.65); }
   </style>
@@ -35,6 +38,7 @@
       </div>
     </nav>
 
+    <!-- HERO with your chosen photo -->
     <section class="hero-full" role="img" aria-label="Piano by the Lake – sunset at a tranquil lake, grand piano under trees">
       <div class="hero-content">
         <h1 class="hero-title" data-lang="de">Piano by the Lake</h1>
@@ -44,11 +48,61 @@
       </div>
     </section>
 
+    <!-- Restored video section -->
+    <section>
+      <h2 class="section-title" data-lang="de">Songs & Videos</h2>
+      <h2 class="section-title hide" data-lang="en">Songs & Videos</h2>
+      <div class="grid">
+        <article class="card"><div class="thumb">
+          <iframe src="https://www.youtube.com/embed/RF2DbFWZ-pM" title="Land of Liberty" allowfullscreen></iframe></div>
+          <h3>Land of Liberty</h3>
+          <p data-lang="de">Weite Horizonte, ein Atemzug Freiheit – getragen von Klavier und warmen Streichern.</p>
+          <p data-lang="en" class="hide">Wide horizons, a breath of freedom – carried by piano and warm strings.</p>
+        </article>
+
+        <article class="card"><div class="thumb">
+          <iframe src="https://www.youtube.com/embed/zoCGyw2o4c4" title="Symphony of the Heart" allowfullscreen></iframe></div>
+          <h3>Symphony of the Heart</h3>
+          <p data-lang="de">Das Herz als Orchester: leise, mutig, lebendig.</p>
+          <p data-lang="en" class="hide">The heart as an orchestra: quiet, brave, alive.</p>
+        </article>
+
+        <article class="card"><div class="thumb">
+          <iframe src="https://www.youtube.com/embed/efHo82REj7k" title="Beautiful Oregon" allowfullscreen></iframe></div>
+          <h3>Beautiful Oregon</h3>
+          <p data-lang="de">Küsten, Wälder, Licht – eine Liebeserklärung an Oregon.</p>
+          <p data-lang="en" class="hide">Coastlines, forests, light – a love letter to Oregon.</p>
+        </article>
+
+        <article class="card"><div class="thumb">
+          <iframe src="https://www.youtube.com/embed/PWoEmZWA0T0" title="The Memory Remains" allowfullscreen></iframe></div>
+          <h3>The Memory Remains</h3>
+          <p data-lang="de">Erinnerung bleibt – zartes Leuchten zwischen gestern und heute.</p>
+          <p data-lang="en" class="hide">Memory remains – a gentle glow between yesterday and today.</p>
+        </article>
+
+        <article class="card"><div class="thumb">
+          <iframe src="https://www.youtube.com/embed/7vWIdR5MJ-k" title="Long Way" allowfullscreen></iframe></div>
+          <h3>Long Way</h3>
+          <p data-lang="de">Lange Wege, leiser Mut – Schritt für Schritt nach vorn.</p>
+          <p data-lang="en" class="hide">Long roads, quiet courage – step by step ahead.</p>
+        </article>
+
+        <article class="card"><div class="thumb">
+          <iframe src="https://www.youtube.com/embed/OARwQr2mamA" title="Echoes of Yesterday" allowfullscreen></iframe></div>
+          <h3>Echoes of Yesterday</h3>
+          <p data-lang="de">Echos von gestern – Spuren der Zeit im warmen Abendlicht.</p>
+          <p data-lang="en" class="hide">Echoes of yesterday – traces of time in the warm evening light.</p>
+        </article>
+      </div>
+    </section>
+
     <footer class="footer">
       <div data-lang="de">© 2025 Thomas Lehmann – Alle Rechte vorbehalten · <a href="index.html">Website (Home)</a></div>
       <div data-lang="en" class="hide">© 2025 Thomas Lehmann – All rights reserved · <a href="index.html">Website (Home)</a></div>
     </footer>
   </div>
+
   <script src="assets/js/app.js"></script>
 </body>
 </html>
