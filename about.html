@@ -6,47 +6,54 @@
   <title>Thomas Lehmann – Emotional Orchestral Music</title>
   <meta name="description" content="About Thomas Lehmann – Emotional Orchestral Music.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .bio-wrap { max-width: 960px; margin: 24px auto; padding: 0 12px; }
+    .bio-text p { line-height: 1.6; margin: 0 0 12px 0; }
+    .portrait { display:flex; justify-content:center; margin: 18px 0 6px; }
+    .portrait img { width: min(820px, 90%); border-radius: 18px; box-shadow: 0 12px 36px rgba(0,0,0,.35); }
+    .caption { text-align:center; color:#93a4c3; font-size: 14px; margin-bottom: 14px; }
+  </style>
 </head>
 <body>
 <div class="container">
-<nav class="nav">
-  <div class="brand"><a href="index.html">Thomas Lehmann Music</a></div>
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="albums.html">CD-Covers</a>
-    <a class="active" href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <div class="lang-toggle">
-    <button class="active" data-lang-btn="de">DE</button>
-    <button data-lang-btn="en">EN</button>
-  </div>
-</nav>
+  <nav class="nav">
+    <div class="brand"><a href="index.html">Thomas Lehmann Music</a></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="albums.html">CD-Covers</a>
+      <a class="active" href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="lang-toggle">
+      <button class="active" data-lang-btn="de">DE</button>
+      <button data-lang-btn="en">EN</button>
+    </div>
+  </nav>
 
-<section class="hero">
-  <div class="overlay">
+  <section class="bio-wrap">
     <h1 data-lang="de">Über Thomas Lehmann</h1>
     <h1 data-lang="en" class="hide">About Thomas Lehmann</h1>
-  </div>
-</section>
 
-<section>
-  <p data-lang="de">
-    Thomas Lehmann ist Komponist und Geschichtenerzähler.  
-    Seine Musik verbindet cineastische Klanglandschaften mit emotionaler Tiefe – inspiriert von Natur, Stille und den Geschichten des Lebens.  
-    In Zusammenarbeit mit der Pianistin <strong>Renée Michele</strong> entstehen Werke voller Gefühl, Licht und Harmonie.
-  </p>
-  <p data-lang="en" class="hide">
-    Thomas Lehmann is a composer and storyteller.  
-    His music blends cinematic soundscapes with emotional depth – inspired by nature, silence, and the stories of life.  
-    In collaboration with pianist <strong>Renée Michele</strong>, his works radiate emotion, light, and harmony.
-  </p>
-</section>
+    <div class="bio-text" data-lang="de">
+      <p>Thomas Lehmann ist <strong>Komponist</strong>. Seine Musik verbindet cineastische Klanglandschaften mit emotionaler Tiefe – inspiriert von Natur, Stille und den Geschichten des Lebens.</p>
+      <p>In Zusammenarbeit mit der Pianistin <strong>Renée&nbsp;Michele</strong> entstehen Werke voller Gefühl, Licht und Harmonie.</p>
+    </div>
+    <div class="bio-text hide" data-lang="en">
+      <p>Thomas Lehmann is a <strong>composer</strong>. His music blends cinematic soundscapes with emotional depth – inspired by nature, silence, and the stories of life.</p>
+      <p>In collaboration with pianist <strong>Renée&nbsp;Michele</strong>, his works radiate warmth, light, and harmony.</p>
+    </div>
 
-<footer class="footer">
-  <div data-lang="de">© 2025 Thomas Lehmann – Alle Rechte vorbehalten · <a href="index.html">Website (Home)</a></div>
-  <div data-lang="en" class="hide">© 2025 Thomas Lehmann – All rights reserved · <a href="index.html">Website (Home)</a></div>
-</footer>
+    <div class="portrait">
+      <img src="assets/images/thomas.jpg" alt="Thomas Lehmann at the piano">
+    </div>
+    <div class="caption" data-lang="de">Thomas Lehmann am Klavier – Sanft warm getönter Cinematic-Look</div>
+    <div class="caption hide" data-lang="en">Thomas Lehmann at the piano – softly warm cinematic tone</div>
+  </section>
+
+  <footer class="footer">
+    <div data-lang="de">© 2025 Thomas Lehmann – Alle Rechte vorbehalten · <a href="index.html">Website (Home)</a></div>
+    <div data-lang="en" class="hide">© 2025 Thomas Lehmann – All rights reserved · <a href="index.html">Website (Home)</a></div>
+  </footer>
 </div>
 <script src="assets/js/app.js"></script>
 </body>
